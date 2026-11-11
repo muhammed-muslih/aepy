@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-import Container from "@/components/layout/Container";
+import Container from "@/components/ui/Container";
 import { navLinks } from "@/constants/Navbar";
 import { Menu, X, Search, ShoppingBag } from "lucide-react";
 
@@ -13,7 +13,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="shrink-0">
             <img
-              src="/images/logo/aepy_logo_transparent.png"
+              src="/images/optimized/logo/aepy_logo_transparent.webp"
               alt="Aepy Bakery"
               className="w-24 object-contain sm:w-28"
             />
@@ -30,7 +30,8 @@ const Navbar = () => {
                 to={link.path}
                 end={link.path === "/"}
                 className={({ isActive }) =>
-                  `relative py-2 text-sm font-semibold whitespace-nowrap transition-colors duration-200 ${isActive ? "text-aepy-orange" : "text-aepy-chocolate hover:text-aepy-orange"}`
+                  `relative py-2 text-sm font-semibold whitespace-nowrap transition-colors 
+                duration-200 ${isActive ? "text-aepy-orange" : "text-aepy-chocolate hover:text-aepy-orange"}`
                 }
               >
                 {({ isActive }) => (
@@ -48,13 +49,13 @@ const Navbar = () => {
 
           {/* Desktop actions */}
           <div className="hidden items-center gap-5 lg:flex">
-            {/* <button
+            <button
               type="button"
               aria-label="Search"
               className="text-aepy-chocolate transition-colors hover:text-aepy-orange"
             >
               <Search size={23} strokeWidth={1.8} />
-            </button> */}
+            </button>
 
             <button
               type="button"
