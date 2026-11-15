@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 import Container from "@/components/ui/Container";
 import { navLinks } from "@/constants/Navbar";
@@ -6,8 +6,31 @@ import { Menu, X, Search, ShoppingBag } from "lucide-react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    // Check initial scroll position
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="relative z-50 w-full bg-aepy-cream">
+    <header
+      className={`
+    sticky top-0 z-50 w-full bg-aepy-cream
+    transition-shadow duration-300
+    ${isScrolled ? "shadow-sm" : "shadow-none"}
+  `}
+    >
       <Container>
         <div className="flex h-24 w-full min-w-0 items-center justify-between gap-6">
           {/* Logo */}

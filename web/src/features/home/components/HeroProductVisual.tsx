@@ -25,12 +25,13 @@ const HeroProductVisual = ({
       <div
         aria-hidden="true"
         className="
-        bottom-[8%] right-[-3%]
+        bottom-[18%] right-[-2%]
         h-[55%] w-[85%]
-        rounded-[55%_0_0_35%/55%_0_0_45%]
+        rounded-[38%_28%_35%_25%/32%_42%_28%_38%]
+
         bg-aepy-orange
         
-        sm:bottom-[5%] sm:right-[-4%]
+        sm:rounded-[45%_30%_40%_30%/38%_50%_30%_45%]
         sm:h-[65%] sm:w-[90%]
         
         lg:right-[-20%]
@@ -38,14 +39,14 @@ const HeroProductVisual = ({
         lg:bottom-auto
         lg:h-[85%]
         lg:w-[120%]
-        lg:rounded-[48%_0_0_38%/55%_0_0_45%]
+        lg:rounded-[52%_32%_45%_35%/42%_58%_30%_55%]
         absolute -z-10"
       />
 
       {/* Decorative strokes */}
       <div
         aria-hidden="true"
-        className="absolute left-[8%] top-[10%] z-20 flex items-center gap-4 rotate-[-30deg] lg:left-[10%] lg:top-[8%]"
+        className="absolute left-[8%] top-[20%] z-20 flex items-center gap-4 rotate-[-30deg] lg:left-[6%] lg:top-[8%]"
       >
         <span className="h-8 w-1.5 rotate-[-30deg] rounded-full bg-aepy-orange sm:h-10" />
         <span className="h-6 w-1.5  rounded-full bg-aepy-orange sm:h-8" />
@@ -107,7 +108,7 @@ const HeroProductVisual = ({
         dragMomentum={false}
         dragElastic={0.05}
         whileDrag={{ scale: 1.02, cursor: "grabbing" }}
-        className="absolute bottom-[55%] left-2 z-40 rounded-2xl border border-white/50 bg-white/50 
+        className="absolute bottom-[40%] left-2 z-40 rounded-2xl border border-white/50 bg-white/50 
         px-4 py-3 shadow-lg backdrop-blur-sm sm:bottom-12 sm:left-0 cursor-grab touch-none active:cursor-grabbing"
       >
         <p className="text-xs font-bold tracking-wider text-aepy-burnt select-none">
@@ -125,6 +126,7 @@ const HeroProductVisual = ({
           type="button"
           onClick={onPrevious}
           aria-label="Previous product"
+          className="rounded-full hover:bg-aepy-ivory p-1"
         >
           <ChevronLeft />
         </button>
@@ -138,12 +140,17 @@ const HeroProductVisual = ({
             className={`h-2 rounded-full transition-all ${
               activeIndex === index
                 ? "w-7 bg-aepy-chocolate"
-                : "w-2 bg-aepy-chocolate/40"
+                : "w-2 bg-aepy-chocolate/40 hover:bg-aepy-chocolate"
             }`}
           />
         ))}
 
-        <button type="button" onClick={onNext} aria-label="Next product">
+        <button
+          type="button"
+          onClick={onNext}
+          aria-label="Next product"
+          className="rounded-full hover:bg-aepy-ivory p-1"
+        >
           <ChevronRight />
         </button>
       </div>

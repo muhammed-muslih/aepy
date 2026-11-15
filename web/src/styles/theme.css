@@ -1,20 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap");
 
 @theme {
   /* Brand colours */
-  --color-aepy-orange: #ff9e0d;
+  --color-aepy-orange: #f08c00;
   --color-aepy-ivory: #e3dfd4;
   --color-aepy-chocolate: #4b2e22;
   --color-aepy-burnt: #b94f00;
   --color-aepy-cream: #f8f4e9;
+  --color-aepy-caramel: #e6c9a3;
 
   /* Typography */
-  --font-display: "DM Sans", sans-serif;
-  --font-body: "DM Sans", sans-serif;
+  --font-sans: "DM Sans", sans-serif;
+  --font-heading: "Playfair Display", serif;
 }
 
 :root {
-  font-family: var(--font-body);
+  font-family: var(--font-sans);
   color: var(--color-aepy-chocolate);
   background-color: var(--color-aepy-cream);
   font-synthesis: none;

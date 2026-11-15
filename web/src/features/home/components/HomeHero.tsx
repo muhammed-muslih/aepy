@@ -35,7 +35,7 @@ const HomeHero = () => {
   return (
     <section className="relative overflow-hidden">
       <Container>
-        <div className="grid grid-cols-1 items-center gap-0 py-10 sm:py-14 lg:min-h-155 lg:grid-cols-[0.9fr_1.1fr] lg:gap-0 lg:py-8 bg-aepy-cream">
+        <div className="grid grid-cols-1 items-center gap-0 py-16  lg:min-h-155 lg:grid-cols-[0.9fr_1.1fr] lg:gap-0 lg:py-16 bg-aepy-cream">
           {/* LEFT SIDE: HERO CONTENT */}
 
           <motion.div
@@ -50,16 +50,16 @@ const HomeHero = () => {
               variants={heroItem}
               className="mb-5 flex items-center gap-3"
             >
-              <span className="text-xs font-extrabold tracking-[0.3em]text-aepy-chocolate sm:text-sm">
+              <span className="text-xs font-extrabold tracking-[0.3em] text-aepy-burnt sm:text-sm">
                 SINCE 1965
               </span>
-              <span className="h-0.5 w-9 bg-aepy-orange" />
+              <span className="h-0.5 w-10 lg:w-14 shrink-0 bg-aepy-orange" />
             </motion.div>
 
             {/* Main heading */}
             <motion.h1
               variants={heroItem}
-              className="text-[clamp(2.7rem,7vw,4.75rem)] font-extrabold leading-[0.94] tracking-[-0.055em] text-aepy-chocolate"
+              className="font-heading text-[clamp(2.7rem,7vw,5.25rem)] font-bold leading-[0.98] tracking-[-0.035em] text-aepy-chocolate"
             >
               Crafting
               <br />
@@ -69,7 +69,6 @@ const HomeHero = () => {
               <br />
               <span className="text-aepy-orange">Memories.</span>
             </motion.h1>
-
             {/* Description */}
             <motion.p
               variants={heroItem}
