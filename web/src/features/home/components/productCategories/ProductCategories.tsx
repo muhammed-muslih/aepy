@@ -36,7 +36,7 @@ const ProductCategories = () => {
         {/* Category gallery*/}
 
         {/* Featured Categories */}
-        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:gap-8">
+        <div className="mt-12 lg:mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:gap-8">
           {featuredCategories.map((category, index) => (
             <Reveal
               key={category.id}
