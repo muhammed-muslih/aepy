@@ -168,10 +168,11 @@ const OurStory = () => {
   return (
     <section
       ref={sectionRef}
-      className="story-section bg-aepy-cream py-8 relative"
+      id="our-story"
+      className="story-section bg-aepy-cream py-10 sm:py-14 lg:py-18 relative overflow-hidden"
     >
       <Container>
-        <div className="grid grid-cols-1 items-center gap-18 lg:py-16 lg:grid-cols-2 lg:gap-12 xl:gap-16">
+        <div className="grid grid-cols-1 items-center gap-18 lg:grid-cols-2 lg:gap-12 xl:gap-16">
           {/* Story content */}
           <div className="relative z-10">
             <Reveal direction="up">

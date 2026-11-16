@@ -11,7 +11,10 @@ const ProductCategories = () => {
   const regularCategories = categories.filter((category) => !category.featured);
 
   return (
-    <section className="overflow-hidden bg-aepy-cream py-8 sm:py-16 lg:py-24">
+    <section
+      id="product-categories"
+      className="relative overflow-hidden bg-aepy-cream py-10 sm:py-14 lg:py-18"
+    >
       <Container>
         {/* Section heading */}
         <div className="max-w-full">

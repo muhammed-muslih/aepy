@@ -33,9 +33,9 @@ const HomeHero = () => {
   };
 
   return (
-    <section className="relative overflow-hidden">
+    <section id="home-hero" className="relative overflow-hidden">
       <Container>
-        <div className="grid grid-cols-1 items-center gap-0 py-16  lg:min-h-155 lg:grid-cols-[0.9fr_1.1fr] lg:gap-0 lg:py-16 bg-aepy-cream">
+        <div className="grid grid-cols-1 items-center gap-0 py-10 sm:py-14 lg:py-18  lg:min-h-155 lg:grid-cols-[0.9fr_1.1fr] lg:gap-0  bg-aepy-cream">
           {/* LEFT SIDE: HERO CONTENT */}
 
           <motion.div
