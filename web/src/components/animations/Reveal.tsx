@@ -9,6 +9,7 @@ interface RevealProps {
   duration?: number;
   className?: string;
   once?: boolean;
+  viewportAmount?: number;
 }
 
 const Reveal = ({
@@ -18,6 +19,7 @@ const Reveal = ({
   duration = 0.7,
   className = "",
   once = true,
+  viewportAmount = 0.2,
 }: RevealProps) => {
   const shouldReduceMotion = useReducedMotion();
 
@@ -28,7 +30,7 @@ const Reveal = ({
       whileInView="visible"
       viewport={{
         once,
-        amount: 0.2,
+        amount: viewportAmount,
       }}
 
       transition={{

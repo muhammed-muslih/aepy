@@ -1,6 +1,6 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { heroSlides } from "@/constants/heroSlides";
-import { type HeroProductVisualProps } from "../types/hero.types";
+import { type HeroProductVisualProps } from "../../types/hero.types";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRef } from "react";
 

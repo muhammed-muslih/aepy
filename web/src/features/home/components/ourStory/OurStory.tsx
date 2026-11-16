@@ -7,7 +7,7 @@ import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import Reveal from "@/components/animations/Reveal";
 import MobileStoryCollage from "./MobileStoryCollage";
 import StoryImageFrame from "./StoryImageFrame";
-import { storyImagePairs } from "../data/storyImages";
+import { storyImagePairs } from "../../data/storyImages";
 import { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 

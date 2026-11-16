@@ -34,15 +34,29 @@ const ProductCategories = () => {
 
         {/* Featured Categories */}
         <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:gap-8">
-          {featuredCategories.map((category) => (
-            <CategoryCard key={category.id} {...category} />
+          {featuredCategories.map((category, index) => (
+            <Reveal
+              key={category.id}
+              direction="up"
+              delay={0.35 + index * 0.15}
+              duration={0.7}
+            >
+              <CategoryCard key={category.id} {...category} />
+            </Reveal>
           ))}
         </div>
 
         {/* Regular Categories */}
         <div className="mt-8 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4 lg:gap-8">
-          {regularCategories.map((category) => (
-            <CategoryCard key={category.id} {...category} />
+          {regularCategories.map((category, index) => (
+            <Reveal
+              key={category.id}
+              direction="up"
+              delay={0.45 + (index % 4) * 0.12}
+              duration={0.7}
+            >
+              <CategoryCard key={category.id} {...category} />
+            </Reveal>
           ))}
         </div>
       </Container>

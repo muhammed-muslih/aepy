@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 import StoryImageFrame from "./StoryImageFrame";
 import Badge from "@/components/ui/Badge";
-import { storyImagePairs } from "../data/storyImages";
+import { storyImagePairs } from "../../data/storyImages";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 

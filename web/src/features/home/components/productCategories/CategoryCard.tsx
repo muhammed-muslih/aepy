@@ -19,7 +19,8 @@ const CategoryCard = ({
       variant="default"
       padding="none"
       radius="xl"
-      className="group overflow-hidden border border-aepy-chocolate/5 transition-shadow duration-500 hover:shadow-xl hover:shadow-aepy-chocolate/10"
+      className="group overflow-hidden border border-aepy-chocolate/5 transition-all duration-500 ease-out hover:-translate-y-1
+    hover:shadow-xl hover:shadow-aepy-chocolate/10"
     >
       {featured ? (
         <div className="group relative h-55 overflow-hidden rounded-3xl sm:h-60">
@@ -49,7 +50,7 @@ const CategoryCard = ({
             <span
               aria-hidden="true"
               className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-aepy-orange text-white 
-            transition-all duration-300 group-hover:translate-x-1 group-hover:bg-white group-hover:text-aepy-chocolate sm:h-10 sm:w-10"
+            transition-all duration-1000 group-hover:translate-x-1 group-hover:bg-white group-hover:text-aepy-chocolate sm:h-10 sm:w-10"
             >
               <ArrowUpRight size={19} />
             </span>
@@ -82,7 +83,7 @@ const CategoryCard = ({
               <span
                 aria-hidden="true"
                 className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-aepy-orange text-white 
-              transition-all duration-300 group-hover:translate-x-1 group-hover:scale-110"
+              transition-all duration-1000 group-hover:translate-x-1 group-hover:scale-110"
               >
                 <ArrowUpRight size={17} />
               </span>
