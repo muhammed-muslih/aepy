@@ -19,7 +19,7 @@ const CategoryCard = ({
       variant="default"
       padding="none"
       radius="xl"
-      className="group overflow-hidden border border-aepy-chocolate/5 transition-all duration-500 ease-out hover:-translate-y-1
+      className="group overflow-hidden border h-full border-aepy-chocolate/5 transition-all duration-500 ease-out hover:-translate-y-1
     hover:shadow-xl hover:shadow-aepy-chocolate/10"
     >
       {featured ? (
@@ -65,6 +65,7 @@ const CategoryCard = ({
                 src={image}
                 alt={name}
                 loading="lazy"
+                draggable={false}
                 className="h-full w-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
               />
             </div>

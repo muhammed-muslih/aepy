@@ -24,3 +24,8 @@
     max-width: 100%;
   }
 }
+
+/* Hide horizontal scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

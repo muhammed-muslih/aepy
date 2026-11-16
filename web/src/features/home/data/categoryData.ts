@@ -28,7 +28,7 @@ export const categories: Category[] = [
     name: "Kadak",
     description:
       "Golden, crispy and full of flavour — perfect companions for your tea and coffee moments.",
-    image: "/images/original/categories/namkeen.png",
+    image: "/images/original/categories/kadak.png",
   },
   {
     id: "fresh-bakes",

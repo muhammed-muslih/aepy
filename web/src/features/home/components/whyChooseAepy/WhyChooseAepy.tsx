@@ -56,18 +56,21 @@ const WhyChooseAepy = () => {
 
           {/* Right: Description */}
           <Reveal direction="up" delay={0.2}>
-            <div className="flex items-stretch gap-5 lg:ml-auto lg:max-w-lg">
+            <div
+              className="flex items-stretch gap-5 lg:ml-auto lg:max-w-lg bg-white lg:bg-aepy-cream  lg:border-0 border 
+             border-aepy-chocolate/10  p-5 sm:p-6 rounded-2xl lg:rounded-none"
+            >
               {/* Vertical Divider */}
-              <div className="w-0.5 shrink-0 rounded-full bg-aepy-orange/70" />
+              <div className="w-1 shrink-0 rounded-full bg-aepy-orange/70" />
 
               <div className="flex flex-col justify-center gap-4">
-                <p className="text-base font-medium leading-relaxed text-aepy-burnt/80 sm:text-lg">
+                <p className="text-base font-medium leading-relaxed text-aepy-chocolate/85 sm:text-lg">
                   Since 1965, Aepy Bakery has been crafting delightful treats
                   with care and passion, bringing generations together through
                   the joy of good food.
                 </p>
 
-                <span className="text-xs font-bold uppercase tracking-[0.2em] text-aepy-orange">
+                <span className="text-xs font-bold uppercase tracking-[0.18em] text-aepy-orange">
                   Crafted with Care · Since 1965
                 </span>
               </div>
