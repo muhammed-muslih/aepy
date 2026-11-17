@@ -48,7 +48,7 @@ const WhyChooseAepy = () => {
             <Reveal direction="up" delay={0.1} className="mt-6">
               <SectionHeading>
                 A Legacy of
-                <br />
+                <br className="md:hidden lg:block" />{" "}
                 <span className="text-aepy-orange">Freshness & Trust.</span>
               </SectionHeading>
             </Reveal>

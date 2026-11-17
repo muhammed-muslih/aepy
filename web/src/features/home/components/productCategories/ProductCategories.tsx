@@ -29,7 +29,7 @@ const ProductCategories = () => {
               <Reveal direction="up" delay={0.1}>
                 <SectionHeading>
                   A Taste for
-                  <br className="md:hidden" />{" "}
+                  <br className="md:hidden lg:block" />{" "}
                   <span className="text-aepy-orange">Every Occasion.</span>
                 </SectionHeading>
               </Reveal>

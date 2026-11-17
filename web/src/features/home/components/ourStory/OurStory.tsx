@@ -181,9 +181,9 @@ const OurStory = () => {
 
             <div className="mt-6">
               <Reveal direction="up" delay={0.1}>
-                <SectionHeading className="max-w-full md:max-w-xl">
-                  A Legacy of Taste <br className="md:hidden lg:block" />
-                  Since <span className="italic text-aepy-orange">1965</span>
+                <SectionHeading className="max-w-full lg:max-w-xl">
+                  A Legacy of Taste <br className="md:hidden lg:block" /> Since{" "}
+                  <span className="italic text-aepy-orange">1965</span>
                 </SectionHeading>
               </Reveal>
             </div>

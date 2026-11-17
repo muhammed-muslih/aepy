@@ -42,7 +42,7 @@ const HomeHero = () => {
             variants={heroContainer}
             initial="hidden"
             animate="visible"
-            className="relative z-20 w-full max-w-120 px-1 lg:px-0"
+            className="relative z-20 w-full lg:max-w-120 px-1 lg:px-0"
           >
             {/* Since 1965 label */}
 
@@ -61,18 +61,16 @@ const HomeHero = () => {
               variants={heroItem}
               className="font-heading text-[clamp(2.7rem,7vw,5.25rem)] font-bold leading-[0.98] tracking-[-0.035em] text-aepy-chocolate"
             >
-              Crafting
-              <br />
+              Crafting <br className="md:hidden lg:block" />
               Taste.
               <br />
-              Creating
-              <br />
+              Creating <br className="md:hidden lg:block" />
               <span className="text-aepy-orange">Memories.</span>
             </motion.h1>
             {/* Description */}
             <motion.p
               variants={heroItem}
-              className="mt-5 max-w-90 text-sm leading-relaxed text-aepy-chocolate/80 sm:text-base sm:leading-7"
+              className="mt-5 max-w-90 md:max-w-md lg:max-w-90 text-sm leading-relaxed text-aepy-chocolate/80 sm:text-base sm:leading-7"
             >
               From our own manufacturing facilities to our bakery outlets, we
               bring fresh, high-quality bakes closer to you.
