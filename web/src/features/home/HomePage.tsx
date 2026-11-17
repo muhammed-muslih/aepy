@@ -3,6 +3,7 @@ import OurStory from "./components/ourStory/OurStory";
 import ProductCategories from "./components/productCategories/ProductCategories";
 import WhyChooseAepy from "./components/whyChooseAepy/WhyChooseAepy";
 import BestSellers from "./components/bestSellers/BestSellers";
+import OurOutlets from "./components/outlets/OurOutlets";
 
 function HomePage() {
   return (
@@ -12,6 +13,7 @@ function HomePage() {
       <ProductCategories />
       <WhyChooseAepy />
       <BestSellers />
+      <OurOutlets />
     </main>
   );
 }
