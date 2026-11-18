@@ -4,6 +4,7 @@ import ProductCategories from "./components/productCategories/ProductCategories"
 import WhyChooseAepy from "./components/whyChooseAepy/WhyChooseAepy";
 import BestSellers from "./components/bestSellers/BestSellers";
 import OurOutlets from "./components/outlets/OurOutlets";
+import HeritageClosing from "./components/heritageClosing/HeritageClosing";
 
 function HomePage() {
   return (
@@ -14,6 +15,7 @@ function HomePage() {
       <WhyChooseAepy />
       <BestSellers />
       <OurOutlets />
+      <HeritageClosing />
     </main>
   );
 }
