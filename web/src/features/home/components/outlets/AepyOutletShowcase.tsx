@@ -52,7 +52,7 @@ const AepyOutletShowcase = () => {
             {product.ctaLabel}
 
             <ArrowRight
-              size={21}
+              size={17}
               className="transition-transform duration-300 group-hover:translate-x-1"
             />
           </Button>
@@ -63,12 +63,12 @@ const AepyOutletShowcase = () => {
       <Reveal direction="right" delay={0.2}>
         <div className="relative mx-auto w-full max-w-2xl lg:max-w-none group">
           {/* Decorative Caramel Shape */}
-          <div className="absolute inset-2 rounded-[3rem] bg-aepy-caramel/70 rotate-3" />
+          <div className="absolute inset-2 rounded-[3rem] bg-aepy-caramel/30 rotate-12 lg:rotate-4" />
 
           {/* Store Image */}
           <div
             className="group relative aspect-4/3 overflow-hidden rounded-[3.5rem_2rem_3.5rem_2rem] 
-            sm:rounded-[4.5rem_2.5rem_4.5rem_2.5rem] shadow-xl shadow-aepy-chocolate/10 -rotate-2 
+            sm:rounded-[4.5rem_2.5rem_4.5rem_2.5rem] shadow-xl shadow-aepy-chocolate/10 lg:-rotate-2 
             transition-transform duration-500 hover:rotate-0"
           >
             <img
