@@ -1,0 +1,1 @@
+export const AEPY_WHATSAPP_NUMBER = "917025116920";
