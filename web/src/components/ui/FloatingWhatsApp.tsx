@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { motion, useMotionValue, animate } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa6";
-import { AEPY_WHATSAPP_NUMBER } from "@/config/contact";
+import { AEPY_WHATSAPP_NUMBER } from "@/constants/contact";
 
 const BUTTON_SIZE = 48;
 const EDGE_GAP = 16;
