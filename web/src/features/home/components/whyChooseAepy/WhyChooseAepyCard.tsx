@@ -19,7 +19,7 @@ const WhyChooseAepyCard = ({ item }: WhyChooseAepyCardProps) => {
         cursor-default
         transition-all duration-500 ease-out
         hover:-translate-y-1
-        hover:shadow-xl hover:shadow-aepy-chocolate/10
+        hover:shadow-xl hover:shadow-aepy-chocolate/10 border-b-4 border-b-aepy-orange/70
       "
     >
       {/* Image */}
@@ -76,22 +76,12 @@ const WhyChooseAepyCard = ({ item }: WhyChooseAepyCardProps) => {
           className="
             mt-3 max-w-xs
             text-sm leading-relaxed
-            text-aepy-burnt/80
+            text-aepy-chocolate/70
             sm:text-base
           "
         >
           {item.description}
         </p>
-
-        {/* Decorative Accent */}
-        <span
-          className="
-            mt-5 h-1 w-10 rounded-full
-            bg-aepy-orange
-            transition-all duration-500
-            group-hover:w-16
-          "
-        />
       </div>
     </Card>
   );
