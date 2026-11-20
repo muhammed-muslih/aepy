@@ -63,13 +63,13 @@ const AepyOutletShowcase = () => {
       <Reveal direction="right" delay={0.2}>
         <div className="relative mx-auto w-full max-w-2xl lg:max-w-none group">
           {/* Decorative Caramel Shape */}
-          <div className="absolute inset-2 rounded-[3rem] bg-aepy-caramel/30 rotate-12 lg:rotate-4" />
+          <div className="absolute -inset-2 rotate-0 rounded-[3rem] bg-aepy-orange/65  lg:rotate-4" />
 
           {/* Store Image */}
           <div
-            className="group relative aspect-4/3 overflow-hidden rounded-[3.5rem_2rem_3.5rem_2rem] 
-            sm:rounded-[4.5rem_2.5rem_4.5rem_2.5rem] shadow-xl shadow-aepy-chocolate/10 lg:-rotate-2 
-            transition-transform duration-500 hover:rotate-0"
+            className="group relative aspect-4/3 overflow-hidden rounded-[2.5rem] 
+            sm:rounded-[4.5rem_2.5rem_4.5rem_2.5rem] shadow-xl shadow-aepy-chocolate/10
+            transition-transform duration-500"
           >
             <img
               src={product.image}
