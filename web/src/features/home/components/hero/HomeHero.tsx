@@ -1,4 +1,4 @@
-import { ArrowRight, MapPin } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 import HeroProductVisual from "./HeroProductVisual";
@@ -9,6 +9,7 @@ import {
   heroContainer,
   heroItem,
 } from "@/features/home/animations/heroAnimations";
+import Reveal from "@/components/animations/Reveal";
 
 const HomeHero = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -79,7 +80,7 @@ const HomeHero = () => {
             {/* CTA Buttons */}
             <motion.div
               variants={heroItem}
-              className="mt-7 flex flex-col gap-3 min-[420px]:flex-row min-[420px]:flex-wrap lg:gap-3"
+              className="mt-7 flex flex-col gap-3 min-[420px]:flex-row min-[420px]:flex-wrap lg:gap-2"
             >
               <Button
                 to="/"
@@ -100,29 +101,35 @@ const HomeHero = () => {
 
               <Button
                 to="#"
-                variant="secondary"
+                variant="ghost"
                 size="lg"
-                className="w-full min-[420px]:w-auto"
+                className="w-full min-[420px]:w-auto text-aepy-chocolate"
               >
-                <MapPin size={17} strokeWidth={2.5} />
                 Find an Outlet
+                <ArrowUpRight
+                  size={17}
+                  className="transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1"
+                />
               </Button>
             </motion.div>
           </motion.div>
 
           {/* RIGHT SIDE: PRODUCT VISUAL */}
-          <div className="relative z-10 min-w-0">
-            <HeroProductVisual
-              imageName={activeSlide.imageName}
-              alt={activeSlide.alt}
-              label={activeSlide.label}
-              description={activeSlide.productDescription}
-              activeIndex={activeIndex}
-              onNext={handleNext}
-              onPrevious={handlePrevious}
-              onSelect={setActiveIndex}
-            />
-          </div>
+
+          <Reveal direction="scale" delay={0.2} duration={0.9}>
+            <div className="relative z-10 min-w-0">
+              <HeroProductVisual
+                imageName={activeSlide.imageName}
+                alt={activeSlide.alt}
+                label={activeSlide.label}
+                description={activeSlide.productDescription}
+                activeIndex={activeIndex}
+                onNext={handleNext}
+                onPrevious={handlePrevious}
+                onSelect={setActiveIndex}
+              />
+            </div>
+          </Reveal>
         </div>
       </Container>
     </section>
