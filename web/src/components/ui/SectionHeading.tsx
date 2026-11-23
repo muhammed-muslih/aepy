@@ -4,25 +4,27 @@ interface SectionHeadingProps {
   children: ReactNode;
   className?: string;
   as?: "h1" | "h2" | "h3";
+  headingColor?: string;
 }
 
 const SectionHeading = ({
   children,
   className = "",
   as: Tag = "h2",
+  headingColor = "text-aepy-chocolate",
 }: SectionHeadingProps) => {
   return (
     <Tag
       className={`
         font-heading
-        text-4xl font-semibold
-        leading-[1.1]
+        text-3xl
+        sm:text-4xl font-semibold
+        leading-tight
         tracking-tight
-        text-aepy-chocolate
-        sm:text-5xl
-        lg:text-6xl
-        xl:text-7xl
+        lg:text-5xl
+        xl:text-6xl
         ${className}
+        ${headingColor}
       `}
     >
       {children}
