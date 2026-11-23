@@ -8,7 +8,7 @@ import OutletCard from "../outletCard/OutletCard";
 
 const OutletGrid = () => {
   return (
-    <section className="bg-aepy-cream py-14 sm:py-18 lg:py-24">
+    <section className="bg-aepy-cream py-14 sm:py-18 lg:py-24 overflow-hidden relative">
       <Container>
         <div className="mx-auto mb-10 text-center sm:mb-14">
           <Reveal direction="up">
