@@ -29,6 +29,11 @@ export const outlets: Outlet[] = [
     state: "Maharashtra",
     postalCode: "416410",
     image: "/images/original/outlets/aepy-store-placeholder.png",
+    googleMapsUrl: "https://maps.app.goo.gl/gmqLE7hf4HYwXHZV6",
+    coordinates: {
+      lat: 16.81877753680747,
+      lng: 74.64333627529007,
+    },
   },
   {
     id: "arfa",
@@ -40,6 +45,11 @@ export const outlets: Outlet[] = [
     state: "Maharashtra",
     postalCode: "416410",
     // image: "/images/original/outlets/aepy-store-placeholder.png",
+    googleMapsUrl: "https://maps.app.goo.gl/Eu9Axd3Js2sx8zeb6",
+    coordinates: {
+      lat: 16.82958597391059,
+      lng: 74.64535221085026,
+    },
   },
   {
     id: "market",
@@ -51,6 +61,11 @@ export const outlets: Outlet[] = [
     state: "Maharashtra",
     postalCode: "416410",
     image: "/images/original/outlets/aepy-store-placeholder.png",
+    googleMapsUrl: "https://maps.app.goo.gl/RX8sPBBPK5iiR4KK7",
+    coordinates: {
+      lat: 16.82176674177196,
+      lng: 74.65008152036746,
+    },
   },
   {
     id: "sangli",
@@ -62,6 +77,11 @@ export const outlets: Outlet[] = [
     state: "Maharashtra",
     postalCode: "416416",
     // image: "/images/original/outlets/aepy-store-placeholder.png",
+    googleMapsUrl: "https://maps.app.goo.gl/F6X3pdaebuMPHMt47",
+    coordinates: {
+      lat: 16.85123668654116,
+      lng: 74.58778423102403,
+    },
   },
   {
     id: "midc",
@@ -73,6 +93,11 @@ export const outlets: Outlet[] = [
     state: "Maharashtra",
     postalCode: "416410",
     image: "/images/original/outlets/aepy-store-placeholder.png",
+    googleMapsUrl: "https://maps.app.goo.gl/W2Jmv5rMS4Pn4QNZ9",
+    coordinates: {
+      lat: 16.8406146,
+      lng: 74.6364592,
+    },
   },
   {
     id: "bliss-bakes",
@@ -84,5 +109,10 @@ export const outlets: Outlet[] = [
     state: "Maharashtra",
     postalCode: "416410",
     // image: "/images/original/outlets/aepy-store-placeholder.png",
+    googleMapsUrl: "https://maps.app.goo.gl/gmqLE7hf4HYwXHZV6",
+    coordinates: {
+      lat: 16.81877753680747,
+      lng: 74.64333627529007,
+    },
   },
 ];

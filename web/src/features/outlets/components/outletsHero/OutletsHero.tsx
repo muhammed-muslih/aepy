@@ -8,7 +8,7 @@ const OutletsHero = () => {
       title={
         <>
           Find Your
-          <br />
+          <br className="md:hidden lg:block" />
           Favourite <span className="text-aepy-orange">Aepy.</span>
         </>
       }
