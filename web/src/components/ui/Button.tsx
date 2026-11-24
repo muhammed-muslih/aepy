@@ -50,7 +50,7 @@ const Button = (props: ButtonProps) => {
 
   const variants: Record<ButtonVariant, string> = {
     primary:
-      "bg-aepy-orange text-white hover:-translate-y-1 hover:bg-aepy-burnt",
+      "bg-aepy-orange text-white hover:text-aepy-cream transition-colors hover:bg-aepy-burnt",
     secondary:
       "border border-aepy-orange text-aepy-chocolate hover:bg-aepy-orange hover:text-aepy-cream hover:-translate-y-1",
     ghost: "text-aepy-chocolate hover:bg-aepy-orange/10 hover:text-aepy-orange",

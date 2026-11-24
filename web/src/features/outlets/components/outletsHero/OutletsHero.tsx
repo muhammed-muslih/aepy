@@ -13,7 +13,7 @@ const OutletsHero = () => {
         </>
       }
       description="From freshly baked favourites to delightful treats, discover an Aepy Bakery outlet near you. We're always happy to welcome you."
-      image="/images/original/outlets/outlets-page-hero.png"
+      image="/images/original/outlets/outlets-hero.png"
       imageAlt="Vintage illustration of the Aepy Bakery storefront with a basket of fresh bread"
     />
   );
