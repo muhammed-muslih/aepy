@@ -8,7 +8,7 @@ import ContactForm from "./ContactForm";
 
 const ContactSection = () => {
   return (
-    <section className="relative overflow-hidden bg-aepy-cream py-14 sm:py-18 lg:py-24">
+    <section className="relative overflow-hidden bg-aepy-cream py-10 sm:py-14 lg:py-18">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -left-24 top-20 size-72 rounded-full border border-aepy-orange/10"

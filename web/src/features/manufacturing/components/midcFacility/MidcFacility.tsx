@@ -9,7 +9,7 @@ const MidcFacility = () => {
   return (
     <section
       id="midc-facility"
-      className="relative isolate overflow-hidden bg-aepy-cream py-12 sm:py-16 lg:py-20"
+      className="relative isolate overflow-hidden bg-aepy-cream py-10 sm:py-14 lg:py-18"
     >
       <Container>
         {/* Main content */}

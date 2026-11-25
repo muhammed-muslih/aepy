@@ -9,7 +9,7 @@ const StationRoadProduction = () => {
   return (
     <section
       id="station-road-production"
-      className="relative isolate overflow-hidden bg-aepy-cream py-12 sm:py-16 lg:py-20"
+      className="relative isolate overflow-hidden bg-aepy-cream py-10 sm:py-14 lg:py-18"
     >
       <Container>
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-14 xl:gap-16">

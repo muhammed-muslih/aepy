@@ -7,7 +7,7 @@ import { ArrowUpRight, ArrowRight, Store, MapPin } from "lucide-react";
 
 const VisitOurLocations = () => {
   return (
-    <section className="relative overflow-hidden bg-aepy-cream py-14 sm:py-18 lg:py-24">
+    <section className="relative overflow-hidden bg-aepy-cream py-10 sm:py-14 lg:py-18">
       <Container>
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-14">
           {/* Left: Store Image */}

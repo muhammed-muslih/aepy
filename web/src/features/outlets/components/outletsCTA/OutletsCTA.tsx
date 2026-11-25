@@ -8,7 +8,7 @@ import { SlPhone } from "react-icons/sl";
 
 const OutletsCTA = () => {
   return (
-    <section className="relative isolate overflow-hidden bg-aepy-cream py-14 sm:py-18 lg:py-24">
+    <section className="relative isolate overflow-hidden bg-aepy-cream py-10 sm:py-14 lg:py-18">
       <Container>
         <div className="grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-6">
           <div className="relative z-10 text-center lg:text-left">

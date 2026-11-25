@@ -11,7 +11,7 @@ const FindUsOnMap = () => {
   const [selectedOutletId, setSelectedOutletId] = useState<string | null>(null);
 
   return (
-    <section className="bg-aepy-cream py-14 sm:py-18 lg:py-24 overflow-hidden isolate relative">
+    <section className="bg-aepy-cream py-10 sm:py-14 lg:py-18 overflow-hidden isolate relative">
       <Container>
         <div className="mx-auto mb-10 text-center sm:mb-14">
           <Reveal direction="up">
