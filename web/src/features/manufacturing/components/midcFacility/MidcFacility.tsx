@@ -54,12 +54,17 @@ const MidcFacility = () => {
           </Reveal>
 
           <Reveal direction="right" delay={0.15} duration={0.8}>
-            <div className="relative mx-auto w-full max-w-2xl">
-              <div className="overflow-hidden rounded-4xl border-[6px] border-aepy-cream shadow-[0_20px_45px_rgba(48,15,0,0.12)] sm:rounded-[2.5rem]">
+            <div className="relative">
+              <div
+                aria-hidden="true"
+                className="absolute -inset-3 -z-10 rounded-[15%_35%_15%_30%] bg-aepy-orange/30 sm:-inset-5"
+              />
+
+              <div className="relative overflow-hidden">
                 <img
                   src="/images/original/manufacturing/midc-factory-placeholder.png"
                   alt="Aepy Foods manufacturing facility at MIDC, Miraj"
-                  className="aspect-5/4 h-full w-full object-cover"
+                  className="h-full w-full object-contain rounded-[15%_35%_15%_30%]"
                   loading="lazy"
                 />
               </div>
