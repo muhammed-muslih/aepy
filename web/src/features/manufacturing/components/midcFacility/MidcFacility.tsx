@@ -57,7 +57,7 @@ const MidcFacility = () => {
             <div className="relative">
               <div
                 aria-hidden="true"
-                className="absolute -inset-3 -z-10 rounded-[15%_35%_15%_30%] bg-aepy-orange/30 sm:-inset-5"
+                className="absolute -inset-3 -z-10 rounded-[15%_35%_15%_30%] bg-aepy-orange/30 sm:-inset-3"
               />
 
               <div className="relative overflow-hidden">

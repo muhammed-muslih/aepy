@@ -12,7 +12,26 @@ const StationRoadProduction = () => {
       className="relative isolate overflow-hidden bg-aepy-cream py-10 sm:py-14 lg:py-18"
     >
       <Container>
-        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-14 xl:gap-16">
+        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-14 xl:gap-16">
+          <Reveal direction="right" delay={0.15} duration={0.8}>
+            <div className="relative">
+              <div
+                aria-hidden="true"
+                className="absolute -inset-3 -z-10 rounded-[35%_15%_30%_15%] bg-aepy-orange/30 sm:-inset-3"
+              />
+
+              {/* Image container */}
+              <div className="relative overflow-hidden">
+                <img
+                  src="/images/original/manufacturing/stationroad-placeholder.png"
+                  alt="Aepy Foods cake production featuring ghee cakes, plum cakes, Swiss rolls, and cream cakes"
+                  className="h-full w-full object-contain  rounded-[35%_15%_30%_15%]"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </Reveal>
+
           <Reveal direction="left" duration={0.8}>
             <div className="flex flex-col items-start">
               <SectionEyebrow className="mb-4">
@@ -46,25 +65,6 @@ const StationRoadProduction = () => {
                     Cake Production
                   </span>
                 </span>
-              </div>
-            </div>
-          </Reveal>
-
-          <Reveal direction="right" delay={0.15} duration={0.8}>
-            <div className="relative">
-              <div
-                aria-hidden="true"
-                className="absolute -inset-3 -z-10 rounded-[35%_15%_30%_15%] bg-aepy-orange/30 sm:-inset-5"
-              />
-
-              {/* Image container */}
-              <div className="relative overflow-hidden">
-                <img
-                  src="/images/original/manufacturing/stationroad-placeholder.png"
-                  alt="Aepy Foods cake production featuring ghee cakes, plum cakes, Swiss rolls, and cream cakes"
-                  className="h-full w-full object-contain  rounded-[35%_15%_30%_15%]"
-                  loading="lazy"
-                />
               </div>
             </div>
           </Reveal>
