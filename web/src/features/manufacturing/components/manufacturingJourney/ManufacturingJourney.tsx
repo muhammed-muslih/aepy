@@ -13,7 +13,7 @@ const ManufacturingJourney = () => {
   return (
     <section
       id="manufacturing-journey"
-      className="relative isolate overflow-hidden bg-aepy-cream py-14 sm:py-18 lg:py-24"
+      className="relative isolate overflow-hidden bg-aepy-cream py-14 sm:py-20 "
     >
       <div
         aria-hidden="true"
