@@ -1,3 +1,5 @@
+import { ShieldCheck, Sparkles, BadgeCheck, Leaf } from "lucide-react";
+
 export interface ManufacturingMilestone {
   id: number;
   step: string;
@@ -28,5 +30,28 @@ export const manufacturingMilestones: ManufacturingMilestone[] = [
       "As demand for Aepy's products increased, production expanded with a larger manufacturing facility at MIDC, Miraj.",
     image: "/images/original/manufacturing/midc-factory-placeholder.png",
     imageAlt: "Illustration of a larger modern bakery manufacturing facility",
+  },
+];
+
+export const qualityHighlights = [
+  {
+    title: "Food Safety",
+    description: "Careful handling throughout production.",
+    icon: ShieldCheck,
+  },
+  {
+    title: "Hygienic Production",
+    description: "A clean and organized production environment.",
+    icon: Sparkles,
+  },
+  {
+    title: "Quality Checks",
+    description: "Attention to quality at every stage.",
+    icon: BadgeCheck,
+  },
+  {
+    title: "Ingredient Care",
+    description: "Thoughtful selection and handling of ingredients.",
+    icon: Leaf,
   },
 ];
