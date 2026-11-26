@@ -13,7 +13,7 @@ const StationRoadProduction = () => {
     >
       <Container>
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-14 xl:gap-16">
-          <Reveal direction="right" delay={0.15} duration={0.8}>
+          <Reveal direction="left" delay={0.15} duration={0.8}>
             <div className="relative">
               <div
                 aria-hidden="true"
@@ -32,7 +32,7 @@ const StationRoadProduction = () => {
             </div>
           </Reveal>
 
-          <Reveal direction="left" duration={0.8}>
+          <Reveal direction="right" duration={0.8}>
             <div className="flex flex-col items-start">
               <SectionEyebrow className="mb-4">
                 Station Road · Our Roots
