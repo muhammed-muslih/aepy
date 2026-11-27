@@ -19,7 +19,7 @@ const ContactSection = () => {
       />
       <Container>
         {/* Section Heading */}
-        <div className="mx-auto mb-10 max-w-3xl text-center sm:mb-14">
+        <div className="mx-auto mb-10 max-w-5xl text-center sm:mb-14">
           <Reveal direction="up">
             <SectionEyebrow className="mb-4 justify-center">
               Get in Touch
