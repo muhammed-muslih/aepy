@@ -24,6 +24,8 @@ interface PageHeroProps {
   // Optional CTA
   ctaLabel?: string;
   ctaHref?: string;
+
+  imageBlend?: boolean;
 }
 
 const PageHero = ({
@@ -37,6 +39,7 @@ const PageHero = ({
   backgroundImage,
   ctaLabel,
   ctaHref,
+  imageBlend = false,
 }: PageHeroProps) => {
   const shouldReduceMotion = useReducedMotion();
 
@@ -201,15 +204,35 @@ const PageHero = ({
               direction="scale"
               delay={0.2}
               duration={0.9}
-              className="flex min-w-0 items-center justify-center lg:justify-end"
+              className="flex min-w-0 items-center justify-center"
             >
-              <div className="w-full max-w-160">
+              <div className="relative w-full max-w-160">
                 <img
                   src={image}
                   alt={imageAlt ?? ""}
                   fetchPriority="high"
-                  className="h-auto w-full object-contain"
+                  className="h-auto w-full object-contain rounded-2xl"
                 />
+
+                {/* Optional image blending */}
+                {imageBlend && (
+                  <div
+                    aria-hidden="true"
+                    className="pointer-events-none absolute inset-0"
+                  >
+                    {/* Top fade */}
+                    <div className="absolute inset-x-0 top-0 h-[12%] bg-linear-to-b from-aepy-hero via-aepy-hero/70 to-transparent" />
+
+                    {/* Bottom fade */}
+                    <div className="absolute inset-x-0 bottom-0 h-[12%] bg-linear-to-t from-aepy-hero via-aepy-hero/70 to-transparent" />
+
+                    {/* Left fade */}
+                    <div className="absolute inset-y-0 left-0 w-[12%] bg-linear-to-r from-aepy-hero via-aepy-hero/70 to-transparent" />
+
+                    {/* Right fade */}
+                    <div className="absolute inset-y-0 right-0 w-[12%] bg-linear-to-l from-aepy-hero via-aepy-hero/70 to-transparent" />
+                  </div>
+                )}
               </div>
             </Reveal>
           )}
