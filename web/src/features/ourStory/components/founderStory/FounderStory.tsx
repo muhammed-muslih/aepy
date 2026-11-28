@@ -60,9 +60,14 @@ const FounderStory = () => {
                 Every Great Legacy <br className="hidden sm:block" />
                 <span className="text-aepy-orange">Begins with a Journey.</span>
               </SectionHeading>
+
+              <div
+                aria-hidden="true"
+                className="mt-4 h-1 w-28 -rotate-2 rounded-full bg-aepy-orange sm:w-36"
+              />
             </Reveal>
 
-            <div className="mt-6 space-y-5 text-base leading-7 text-aepy-chocolate sm:text-lg">
+            <div className="mt-6 space-y-5 text-base leading-7 text-aepy-chocolate sm:text-lg sm:leading-8">
               <Reveal direction="up" delay={0.1}>
                 <p>
                   Every story has a beginning. For{" "}
